@@ -4,13 +4,24 @@ import {useDataTable} from "./useDataTable";
 import {CustomModal} from "./Modal/Modal";
 
 const DataTable = () => {
-    const {data, columns, loading, currentModal, isModalOpen, searchText, showModal, search, handleChange, handleCancel} = useDataTable()
+    const {
+        data,
+        columns,
+        loading,
+        currentModal,
+        isModalOpen,
+        searchText,
+        showModal,
+        search,
+        handleChange,
+        handleCancel
+    } = useDataTable()
     return (
         <div>
             <h2>Beer table with AntDesign</h2>
             <Space style={{marginBottom: 16}}>
                 <Input
-                    placeholder={'Enter search text'}
+                    placeholder={'name, alchool or country'}
                     onChange={handleChange}
                     type='text'
                     allowClear

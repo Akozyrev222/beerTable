@@ -7,7 +7,7 @@ export const useModal = (currentModal: Beer | undefined | null) => {
     const [loading, setLoading] = useState(false)
     //const testPhoto = 'https://d14uq1pz7dzsdq.cloudfront.net/dc13deb9-f9f6-464a-b1fc-c3cf713531f4_.png?Expires=1712016216&Signature=dpnDEOOZ0qiV7gdWvHgxlrn1vVhMHO8NwiF3wdfrT6CftQOKbNSOsNwYHvp85i-KNsmKKPeScjnu3conm6NOq-JQScpq1DFANPAzTtoWfLuvrZ0Slx6dAzIae0H~M7qVoGpweFqPNuYTSbsql~FoN193K2Uqd6oRjm~QA-t2WMvR0~GVsaEvAnDlvIA7P9MoOedowziaPnx2exk7-Ti9Zcq9nX5gpFAQMFeQKMr2iHQbCLF7QXWQvXEBT5ZOqE4RGhPrdbgvTZxPOjbotZv0g5Nt8qTHzEtXsEftsS6BT6d2cW8BP6BqfKhaNlfUMgVk7KprW-g3Rv2VNrxGHTgrAQ__&Key-Pair-Id=K1F55BTI9AHGIK'
     const getPhoto = async () => {
-        console.log('here')
+        console.log('start generate')
         setLoading(true)
         const options = {
             method: "POST",
